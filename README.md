@@ -12,9 +12,21 @@ Since most systems are **inherently complex** and often include **multiple redox
 # Dunn Method for Capacitive and Diffusive Contributions
 The **Dunn method** is a widely used approach to differentiate and analyze the **capacitive and diffusive contributions** to the total current in electrode materials. This method is particularly used for studying **energy storage devices** like supercapacitors and batteries.
 
-Capacitive current: i(v) ∝ v   →   i(v) = k₁v  
-Diffusion-controlled current: i(v) ∝ v¹/²   →   i(v) = k₂v¹/²
-i(v) = k₁v + k₂v¹/²
+<p align="center">
+Capacitive current: i(v) ∝ v → i(v) = k₁v
+</p>
+
+<p align="center">
+Diffusion-controlled current:i(v) ∝ √v → i(v) = k₂√v
+</p>
+
+<p align="center">
+Total current: i(v) = k₁v + k₂√v
+</p>
+
+<p align="center">
+i(v)/√v = k₁√v + k₂
+</p>
 
 
 # How to use this repository
