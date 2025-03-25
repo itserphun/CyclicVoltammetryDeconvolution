@@ -30,10 +30,53 @@ i(v)/√v = k₁√v + k₂
 
 
 # How to use this repository
-This repository includes a **Python-based script** designed to perform **deconvolution and visualization** of cyclic voltammetry (CV) data using the **Dunn method**. The script facilitates the separation of **capacitive** and **diffusive contributions** to the total current.
-1. Perform CV experiments at least two scan rates (ensure the recorded potential interval remains consistent across all scan rates).
+This repository includes a **Python-based script** designed to perform **deconvolution and visualization** of cyclic voltammetry (CV) data using the **Dunn method**. The script facilitates the separation of **capacitive** and **diffusive contributions** to the total current. After executing the code, it will generate an Excel file with the calculated k₁ and k₂ values.
+1. Perform CV experiments at least two scan rates (ensure the recorded potential interval remains consistent across all scan rates, resulting in fixed potentials).
 2. Format the data Excel as follows:
-   - **First Column:** Keep the potentials in this column.
+   - **First Column:** Keep the potentials (fixed potentials) in this column.
    - **Subsequent Columns:** Organize the corresponding currents for each scan rate in the following columns.
-
   
+   
+![Alt text](images/Picture1.png)
+
+3. Open the file src/CapDiffAnalyzer.ipynb in Jupyter Notebook, and load your formatted Excel data using the following code line (line 12): "data = pd.read_excel('example.xlsx')"
+
+![Alt text](images/Picture2.png)
+
+4. Run the code!
+
+
+
+
+
+
+
+
+# Example results derived from real laboratory data for an anode of a sodium-ion battery.
+
+<p align="center">
+          **Evaluated k₁ and k₂ coefficients**
+</p>
+
+
+
+   ![Alt text](images/Picture3.png)
+
+![Alt text](images/Picture4.png)
+
+<p align="center">
+          **CV curves with capacitive and diffusive contributions at the scan rate of 0,2 mV/s**
+</p>
+
+![Alt text](images/Picture5.png)
+
+<p align="center">
+          **CV curves with capacitive and diffusive contributions at the scan rate of 0,6 mV/s**
+</p>
+
+![Alt text](images/Picture6.png)
+
+<p align="center">
+          **CV curves with capacitive and diffusive contributions at the scan rate of 0,8 mV/s**
+</p>
+
